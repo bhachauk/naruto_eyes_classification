@@ -1,12 +1,12 @@
-### Various Neural Networks for Image Classification
+## Analysing Various Neural Networks for Image Classification
 ---
 
-##### Getting Started :
+### Getting Started :
 ---
 
 Classification on Naruto character eye images with various **CNN** for analysing the Neural Network accuracy.
 
-**Classes :**
+###### Classes :
 ---
 
 - Sharingan
@@ -14,7 +14,7 @@ Classification on Naruto character eye images with various **CNN** for analysing
 - Sage
 - Others
 
-**Networks :**
+###### Networks :
 ---
 
 - CNN1
@@ -24,7 +24,7 @@ Classification on Naruto character eye images with various **CNN** for analysing
 - VGG16
 
 
-##### How to run ?
+### How to run ?
 ---
 
 1. Train :
@@ -39,14 +39,14 @@ python train.py -d data/train/
 python test.py -m modules/LENET_naruto_eye.h5 -i data/test/sage_draw.jpeg
 ```
 
-##### Result :
+### Result :
 ---
 
 ![result](/data/naruto_eyes_prediction.gif)
 
 
 
-##### References :
+#### References :
 ---
 
 - https://towardsdatascience.com/the-4-convolutional-neural-network-models-that-can-classify-your-fashion-images-9fe7f3e5399d
