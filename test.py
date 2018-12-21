@@ -8,7 +8,7 @@ import cv2
 
 def cvimshow(title, img):
     cv2.imshow(title, img)
-    key = cv2.waitKey(5000)
+    key = cv2.waitKey(20000)
     if key == 27:
         cv2.destroyAllWindows()
 
@@ -39,12 +39,13 @@ model = load_model(args["model"])
 
 # classify the input image
 result = model.predict(image)
-print 'Prediction : ', result
 result = result[0]
+print 'Prediction : \n'
 class_ = {"sharingan": 0, "byakugan": 1, "sage": 2, "others": 3}
 output = imutils.resize(orig, width=400)
 line = 1
 for a, b in zip(class_.keys(), result):
+    print "{}: {:.2f}%".format(a, b * 100)
     cv2.putText(output, "{}: {:.2f}%".format(a, b * 100), (10, 25+line), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 2)
     line += 15
 
