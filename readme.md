@@ -6,6 +6,14 @@
 
 Classification on naruto images.
 
+**Classes :**
+
+- Sharingan
+- Byakugan
+- Sage
+- Others
+
+
 ##### How to run ?
 ---
 
