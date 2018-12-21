@@ -4,7 +4,7 @@
 ##### Getting Started :
 ---
 
-
+Classification on naruto images.
 
 ##### How to run ?
 ---
