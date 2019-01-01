@@ -1,0 +1,89 @@
+body{
+    font-family:'Ninja Naruto';
+    background: #333;
+}
+
+.titleContainer{
+    overflow: hidden;
+    height: 200px;
+    width : 100%;
+    text-align: center;
+    background: #951;
+    display: table;
+    span {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    p{
+        color: white;
+    }
+}
+
+h1 {
+    font-size: 50px;
+    letter-spacing: 3px;
+    color: #ff9;
+}
+
+h5 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #ff9;
+}
+
+.imgContainer{
+    margin-top: 1%;
+    margin-left: 10%;
+    float: left;
+    width: auto;
+    text-align: center;
+}
+
+.resultContainer{
+    margin-top: 1%;
+    margin-right: 10%;
+    float: right;
+    width: 45%;
+    text-align: center;
+}
+
+.inputfile {
+    font-size: 1.25em;
+    font-weight: 25px;
+    color: white;
+    background-color: #ccc;
+}
+
+#inimg, #plot {
+    margin: 5%;
+}
+
+.imgborder{
+    margin-top: 15%;
+    border : 4px dashed red;
+    min-height: 300px;
+}
+
+.predictBtn{
+    font-size: 1.25em;
+    font-weight: 25px;
+    color: white;
+    background-color: coral;
+    width: 100px;
+    height: 40px;
+
+}
+p {
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+}
+
+
+.row {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+}

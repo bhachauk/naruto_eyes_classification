@@ -39,12 +39,79 @@ python train.py -d data/train/
 python test.py -m modules/LENET_naruto_eye.h5 -i data/test/sage_draw.jpeg
 ```
 
-### Result :
+### Results :
 ---
 
-![result](/data/naruto_eyes_prediction.gif)
+<div style="text-align: center">
+<img src="/data/naruto_eyes_prediction-web.gif" width="50%"/>
+</div>
 
 
+### Neural Networks :
+---
+
+I have used these neural networks. Still lot to go and include ... !
+
+#### LeNet :
+---
+
+Structure:
+
+<div style="text-align: center">
+<img src="/plots/LENET_schema.png" width="50%"/>
+</div>
+
+Training result:
+
+<div style="text-align: center">
+<img src="/plots/LENET.png" width="50%"/>
+</div>
+
+#### CNN4 :
+---
+
+Structure:
+
+<div style="text-align: center">
+<img src="/plots/CNN4_schema.png" width="50%"/>
+</div>
+
+Training result:
+
+<div style="text-align: center">
+<img src="/plots/CNN4.png" width="50%"/>
+</div>
+
+
+#### CNN3 :
+---
+
+Structure:
+
+<div style="text-align: center">
+<img src="/plots/CNN3_schema.png" width="50%"/>
+</div>
+
+Training result:
+
+<div style="text-align: center">
+<img src="/plots/CNN3.png" width="50%"/>
+</div>
+
+#### CNN1 :
+---
+
+Structure:
+
+<div style="text-align: center">
+<img src="/plots/CNN1_schema.png" width="50%"/>
+</div>
+
+Training result:
+
+<div style="text-align: center">
+<img src="/plots/CNN1.png" width="50%"/>
+</div>
 
 #### References :
 ---
