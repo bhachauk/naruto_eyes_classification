@@ -1,4 +1,4 @@
-const modelURL = 'http://localhost:4000/tfmodels/lenet/model.json';
+const modelURL = 'https://bhanuchander210.github.io/naruto_eyes_classification/tfmodels/lenet/model.json';
 const IMAGE_SIZE = 28;
 var results;
 
