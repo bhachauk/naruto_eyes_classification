@@ -5,7 +5,7 @@ body{
 
 .titleContainer{
     overflow: hidden;
-    height: 200px;
+    height: 100px;
     width : 100%;
     text-align: center;
     background: #951;
@@ -20,13 +20,13 @@ body{
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 30px;
     letter-spacing: 3px;
     color: #ff9;
 }
 
 h5 {
-    font-size: 20px;
+    font-size: 10px;
     letter-spacing: 1px;
     color: #ff9;
 }
@@ -34,22 +34,21 @@ h5 {
 .imgContainer{
     margin-top: 1%;
     margin-left: 10%;
-    float: left;
-    width: auto;
+    width: 25%;
     text-align: center;
+    display: inline-block;
 }
 
 .resultContainer{
+    margin-left: 10%;
     margin-top: 1%;
-    margin-right: 10%;
-    float: right;
     width: 45%;
     text-align: center;
+    display: inline-block;
 }
 
 .inputfile {
-    font-size: 1.25em;
-    font-weight: 25px;
+    font-weight: 15px;
     color: white;
     background-color: #ccc;
 }
@@ -58,19 +57,23 @@ h5 {
     margin: 5%;
 }
 
+#plot{
+    max-height: 250px;
+    font-size: 10px;
+}
+
 .imgborder{
     margin-top: 15%;
     border : 4px dashed red;
-    min-height: 300px;
+    min-height: 150px;
 }
 
 .predictBtn{
-    font-size: 1.25em;
     font-weight: 25px;
     color: white;
     background-color: coral;
-    width: 100px;
-    height: 40px;
+    width: 60px;
+    height: 25px;
 
 }
 p {
@@ -78,12 +81,5 @@ p {
     width: 100%;
     color: white;
     font-family: "Times New Roman", Times, serif;
-    font-size: 20px;
-}
-
-
-.row {
-  display: inline-block;
-  position: absolute;
-  bottom: 0;
+    font-size: 12px;
 }

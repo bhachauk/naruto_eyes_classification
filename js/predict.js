@@ -66,12 +66,24 @@ function putChart(inData){
 
     var layout = {
         title: 'Ocular Classification Result',
+        width: 400,
+        height: 300,
         plot_bgcolor:"#c2b999",
         paper_bgcolor:"#c2b999",
         yaxis: {
         rangemode: 'nonnegative',
         range: [0, 100]
-      }
+        },
+        font: {
+            size: 9,
+        },
+        margin: {
+            l: 50,
+            r: 50,
+            b: 50,
+            t: 80,
+            pad: 4
+        }
     }
 
     Plotly.newPlot('plot', data, layout);

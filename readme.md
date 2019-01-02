@@ -1,51 +1,52 @@
-## Analysing Various Neural Networks for Image Classification
+## Naruto Ocular Power Classifier using Neural Networks
 ---
+
+<p style="text-align: center">
+<img src="/data/naruto_eyes_prediction-web.gif" width="50%"/>
+</p>
 
 ### Getting Started :
 ---
 
 Classification on Naruto character eye images with various **CNN** for analysing the Neural Network accuracy.
 
-###### Classes :
+###### Info :
 ---
 
-- Sharingan
-- Byakugan
-- Sage
-- Others
 
-###### Networks :
+|Classes| NeuralNetworks|
+|-------|---------------|
+|Sharingan|CNN1|
+|Byakugan|CNN3|
+|Sage|CNN4|
+|Others|LeNet|
+||VGG16|
+
+### How to Train model with custom data?
 ---
 
-- CNN1
-- CNN3
-- CNN4
-- LeNet
-- VGG16
 
+1. Prepare Images in directory structure
 
-### How to run ?
----
+```commandline
+- train
+    |_sharingan
+    |_byakugan
+    |_Others
 
-1. Train :
+```
+
+2. Train Command:
 
 ```python
 python train.py -d data/train/
 ```
 
-2. Test :
+3. Test :
 
 ```python
 python test.py -m modules/LENET_naruto_eye.h5 -i data/test/sage_draw.jpeg
 ```
-
-### Results :
----
-
-<div style="text-align: center">
-<img src="/data/naruto_eyes_prediction-web.gif" width="50%"/>
-</div>
-
 
 ### Neural Networks :
 ---
@@ -58,7 +59,7 @@ I have used these neural networks. Still lot to go and include ... !
 Structure:
 
 <div style="text-align: center">
-<img src="/plots/LENET_schema.png" width="50%"/>
+<img src="/plots/LENET_schema.png" width="auto" height="500px"/>
 </div>
 
 Training result:
@@ -73,13 +74,13 @@ Training result:
 Structure:
 
 <div style="text-align: center">
-<img src="/plots/CNN4_schema.png" width="50%"/>
+<img src="/plots/CNN4_schema.png" width="auto" height="500px"/>
 </div>
 
 Training result:
 
 <div style="text-align: center">
-<img src="/plots/CNN4.png" width="50%"/>
+<img src="/plots/CNN4.png" width="auto" height="500px"/>
 </div>
 
 
@@ -95,7 +96,7 @@ Structure:
 Training result:
 
 <div style="text-align: center">
-<img src="/plots/CNN3.png" width="50%"/>
+<img src="/plots/CNN3.png" width="auto" height="500px"/>
 </div>
 
 #### CNN1 :
@@ -104,7 +105,7 @@ Training result:
 Structure:
 
 <div style="text-align: center">
-<img src="/plots/CNN1_schema.png" width="50%"/>
+<img src="/plots/CNN1_schema.png" width="auto" height="500px"/>
 </div>
 
 Training result:
@@ -121,3 +122,4 @@ Training result:
 - https://gist.github.com/baraldilorenzo/07d7802847aaad0a35d3
 - https://machinelearningmastery.com/use-pre-trained-vgg-model-classify-objects-photographs/
 - https://www.pyimagesearch.com/2017/12/11/image-classification-with-keras-and-deep-learning/
+- Naruto fonts by [Cufonfonts](https://www.cufonfonts.com/font/ninja-naruto)
