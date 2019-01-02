@@ -1,7 +1,7 @@
 ## Naruto Ocular Power Classifier using Neural Networks
 ---
 
-<p style="text-align: center">
+<p style="align: center">
 <img src="/data/naruto_eyes_prediction-web.gif" width="50%"/>
 </p>
 
@@ -58,30 +58,30 @@ I have used these neural networks. Still lot to go and include ... !
 
 Structure:
 
-<div style="text-align: center">
+<p style="align: center">
 <img src="/plots/LENET_schema.png" width="auto" height="500px"/>
-</div>
+</p>
 
 Training result:
 
-<div style="text-align: center">
+<p style="align: center">
 <img src="/plots/LENET.png" width="50%"/>
-</div>
+</p>
 
 #### CNN4 :
 ---
 
 Structure:
 
-<div style="text-align: center">
+<p style="align: center">
 <img src="/plots/CNN4_schema.png" width="auto" height="500px"/>
-</div>
+</p>
 
 Training result:
 
-<div style="text-align: center">
+<p style="align: center">
 <img src="/plots/CNN4.png" width="auto" height="500px"/>
-</div>
+</p>
 
 
 #### CNN3 :
@@ -89,32 +89,32 @@ Training result:
 
 Structure:
 
-<div style="text-align: center">
-<img src="/plots/CNN3_schema.png" width="50%"/>
-</div>
+<p style="align: center">
+<img src="/plots/CNN3_schema.png" width="auto" height="500px"/>
+</p>
 
 Training result:
 
-<div style="text-align: center">
+<p style="align: center">
 <img src="/plots/CNN3.png" width="auto" height="500px"/>
-</div>
+</p>
 
 #### CNN1 :
 ---
 
 Structure:
 
-<div style="text-align: center">
+<p style="align: center">
 <img src="/plots/CNN1_schema.png" width="auto" height="500px"/>
-</div>
+</p>
 
 Training result:
 
-<div style="text-align: center">
+<p style="align: center">
 <img src="/plots/CNN1.png" width="50%"/>
-</div>
+</p>
 
-#### References :
+#### Thanks for the References :
 ---
 
 - https://towardsdatascience.com/the-4-convolutional-neural-network-models-that-can-classify-your-fashion-images-9fe7f3e5399d
@@ -123,3 +123,4 @@ Training result:
 - https://machinelearningmastery.com/use-pre-trained-vgg-model-classify-objects-photographs/
 - https://www.pyimagesearch.com/2017/12/11/image-classification-with-keras-and-deep-learning/
 - Naruto fonts by [Cufonfonts](https://www.cufonfonts.com/font/ninja-naruto)
+- And All open source resources ..!
