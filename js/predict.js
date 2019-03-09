@@ -4,13 +4,14 @@ var results;
 
 async function main(){
     const imgEle = await document.getElementById('inimg');
-    const model = await tf.loadModel(modelURL);
+    const model = await tf.loadLayersModel(modelURL);
 
     // Getting the re-sized image
-    var img = tf.fromPixels(imgEle).resizeNearestNeighbor([IMAGE_SIZE, IMAGE_SIZE]).toFloat();
-    var normalized = img.div(255.0).expandDims();
-
-    normalized.print()
+    var img = tf.browser.fromPixels(imgEle).resizeNearestNeighbor([IMAGE_SIZE, IMAGE_SIZE]).toFloat();
+    console.log('Image')
+    img.print()
+    var normalized = img.mean(2).expandDims(2).div(255.0);
+    normalized = normalized.expandDims();
     const predicted = await model.predict(normalized).data()
 
     // get the model's prediction results

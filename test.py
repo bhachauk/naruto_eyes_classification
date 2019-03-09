@@ -13,18 +13,17 @@ def cvimshow(title, img):
         cv2.destroyAllWindows()
 
 ap = argparse.ArgumentParser()
-ap.add_argument("-m", "--model", required=True,
-	help="path to trained model model")
-ap.add_argument("-i", "--image", required=True,
-	help="path to input image")
+ap.add_argument("-m", "--model", required=True, help="path to trained model model")
+ap.add_argument("-i", "--image", required=True, help="path to input image")
 args = vars(ap.parse_args())
 
-image = cv2.imread(args["image"])
+image = cv2.imread(args["image"], 0)
+image = image[:, :, np.newaxis]
 orig = image.copy()
 
-## Description:
+# Description:
 
-global_imgformat = (28, 28, 3)
+global_imgformat = (28, 28, 1)
 gwidth, gheight, gdepth = global_imgformat
 
 # pre-process the image for classification

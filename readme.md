@@ -123,4 +123,6 @@ Training result:
 - https://machinelearningmastery.com/use-pre-trained-vgg-model-classify-objects-photographs/
 - https://www.pyimagesearch.com/2017/12/11/image-classification-with-keras-and-deep-learning/
 - Naruto fonts by [Cufonfonts](https://www.cufonfonts.com/font/ninja-naruto)
+- [TensorFlow.js](https://js.tensorflow.org/)
+- [Release Notes of Tensorflow.js](https://github.com/tensorflow/tfjs/releases)
 - And All open source resources ..!

@@ -237,7 +237,7 @@ labels = []
 MODULE_DIR = './modules/'
 PLOT_DIR = './plots/'
 class_ = {"sharingan": 0, "byakugan": 1, "sage": 2, "others": 3}
-global_imgformat = (28, 28, 3)
+global_imgformat = (28, 28, 1)
 gwidth, gheight, gdepth = global_imgformat
 
 models = [
@@ -256,7 +256,8 @@ random.shuffle(imagePaths)
 # loop over the input images
 for imagePath in imagePaths:
     # load the image, pre-process it, and store it in the data list
-    image = cv2.imread(imagePath)
+    image = cv2.imread(imagePath, 0)
+    image = image[:, :, np.newaxis]
     image = cv2.resize(image, (gwidth, gheight))
     image = img_to_array(image)
     data.append(image)
@@ -322,4 +323,4 @@ for name, model in models:
     plt.ylabel("Loss/Accuracy")
     plt.legend(loc="lower left")
     fileName = PLOT_DIR + name + '.png'
-    plt.savefig(fileName)
+    #plt.savefig(fileName)
