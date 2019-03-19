@@ -37,12 +37,13 @@ h5 {
     width: 25%;
     text-align: center;
     display: inline-block;
+    align: center;
 }
 
 .resultContainer{
     margin-left: 10%;
     margin-top: 1%;
-    width: 45%;
+    width: 35%;
     text-align: center;
     display: inline-block;
 }
@@ -68,10 +69,11 @@ h5 {
 }
 
 .imgborder{
-    margin-top: 15%;
+    margin: 15%;
     border : 4px dashed red;
-    min-height: 150px;
-    max-width: 150px;
+    min-height: 200px;
+    width: 240px;
+    align: center;
 }
 
 .predictBtn{
