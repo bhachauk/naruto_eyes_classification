@@ -57,24 +57,33 @@ h5 {
     margin: 5%;
 }
 
+.plotly {
+    width: auto;
+    height: 50%;
+}
+
 #plot{
-    max-height: 250px;
     font-size: 10px;
+    align: center;
 }
 
 .imgborder{
     margin-top: 15%;
     border : 4px dashed red;
     min-height: 150px;
+    max-width: 150px;
 }
 
 .predictBtn{
     font-weight: 25px;
     color: white;
     background-color: coral;
-    width: 60px;
+    width: 120px;
     height: 25px;
-
+    display: inline-block;
+    border: solid 0px coral;
+    cursor: pointer;
+    text-align: center;
 }
 p {
     text-align: center;
