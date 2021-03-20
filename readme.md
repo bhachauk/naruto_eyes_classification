@@ -1,4 +1,4 @@
-## Naruto Ocular Power Classifier using Neural Networks
+## Naruto Eyes Classifier using Neural Networks
 ---
 
 <p style="align: center">
@@ -10,17 +10,13 @@
 
 Classification on Naruto character eye images with various **CNN** for analysing the Neural Network accuracy.
 
-###### Info :
+###### Classes :
 ---
 
+- Sharingan
+- Byakugan
+- Others (Sage)
 
-|Classes| NeuralNetworks|
-|-------|---------------|
-|Sharingan|CNN1|
-|Byakugan|CNN3|
-|Sage|CNN4|
-|Others|LeNet|
-||VGG16|
 
 ### How to Train model with custom data?
 ---
@@ -51,7 +47,7 @@ python test.py -m modules/LENET_naruto_eye.h5 -i data/test/sage_draw.jpeg
 ### Neural Networks :
 ---
 
-I have used these neural networks. Still lot to go and include ... !
+I have used the basic neural networks for testing purpose and will add more.
 
 #### LeNet :
 ---
@@ -66,52 +62,6 @@ Training result:
 
 <p style="align: center">
 <img src="/plots/LENET.png" width="50%"/>
-</p>
-
-#### CNN4 :
----
-
-Structure:
-
-<p style="align: center">
-<img src="/plots/CNN4_schema.png" width="auto" height="500px"/>
-</p>
-
-Training result:
-
-<p style="align: center">
-<img src="/plots/CNN4.png" width="auto" height="500px"/>
-</p>
-
-
-#### CNN3 :
----
-
-Structure:
-
-<p style="align: center">
-<img src="/plots/CNN3_schema.png" width="auto" height="500px"/>
-</p>
-
-Training result:
-
-<p style="align: center">
-<img src="/plots/CNN3.png" width="auto" height="500px"/>
-</p>
-
-#### CNN1 :
----
-
-Structure:
-
-<p style="align: center">
-<img src="/plots/CNN1_schema.png" width="auto" height="500px"/>
-</p>
-
-Training result:
-
-<p style="align: center">
-<img src="/plots/CNN1.png" width="50%"/>
 </p>
 
 #### Thanks for the References :

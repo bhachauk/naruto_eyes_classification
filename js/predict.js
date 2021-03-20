@@ -1,12 +1,20 @@
-const modelURL = 'https://bhanuchander210.github.io/naruto_eyes_classification/tfmodels/lenet/model.json';
-const IMAGE_SIZE = 28;
 var results;
+
+function getModelURL(){
+    return 'https://bhanuchander210.github.io/naruto_eyes_classification/tfmodels/lenet/model.json';
+}
+
+function getImageSize()
+{
+    return 28;
+}
 
 async function main(){
     const imgEle = await document.getElementById('inimg');
-    const model = await tf.loadLayersModel(modelURL);
+    const model = await tf.loadLayersModel(getModelURL());
 
     // Getting the re-sized image
+    var IMAGE_SIZE = getImageSize();
     var img = tf.browser.fromPixels(imgEle).resizeNearestNeighbor([IMAGE_SIZE, IMAGE_SIZE]).toFloat();
     console.log('Image')
     img.print()
@@ -66,14 +74,22 @@ function putChart(inData){
     }];
 
     var layout = {
-        title: 'Ocular Classification Result',
-        width: 400,
-        height: 300,
-        plot_bgcolor:"#c2b999",
-        paper_bgcolor:"#c2b999",
+        width: 700,
+        height: 400,
         yaxis: {
-        rangemode: 'nonnegative',
-        range: [0, 100]
+            rangemode: 'nonnegative',
+            range: [0, 100],
+            showgrid: false,
+            mirror: true,
+            ticks: 'outside',
+            showline: true,
+            linewidth: 2
+        },
+        xaxis: {
+            mirror: true,
+            ticks: 'outside',
+            showline: true,
+            linewidth: 2
         },
         font: {
             size: 9,

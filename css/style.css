@@ -1,14 +1,25 @@
-body{
+body, button {
     font-family:'Ninja Naruto';
-    background: #333;
+    background: white;
+}
+
+table
+{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+}
+
+td{
+    text-align: center;
 }
 
 .titleContainer{
     overflow: hidden;
     height: 100px;
     width : 100%;
+    margin-top: 2%;
     text-align: center;
-    background: #951;
     display: table;
     span {
         display: table-cell;
@@ -22,18 +33,16 @@ body{
 h1 {
     font-size: 30px;
     letter-spacing: 3px;
-    color: #ff9;
+    color: #000;
 }
 
 h5 {
     font-size: 10px;
     letter-spacing: 1px;
-    color: #ff9;
+    color: #000;
 }
 
 .imgContainer{
-    margin-top: 1%;
-    margin-left: 10%;
     width: 25%;
     text-align: center;
     display: inline-block;
@@ -41,10 +50,8 @@ h5 {
 }
 
 .resultContainer{
-    margin-left: 10%;
-    margin-top: 1%;
-    width: 35%;
     text-align: center;
+    align: center;
     display: inline-block;
 }
 
@@ -55,31 +62,32 @@ h5 {
 }
 
 #inimg, #plot {
-    margin: 5%;
-}
-
-.plotly {
-    width: auto;
-    height: 50%;
+    margin: auto;
 }
 
 #plot{
     font-size: 10px;
-    align: center;
 }
 
-.imgborder{
-    margin: 15%;
+.plotly
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.imgBorder{
+    padding: 25px;
     border : 4px dashed red;
     min-height: 200px;
     width: 240px;
-    align: center;
+    display: inline-block;
 }
 
 .predictBtn{
     font-weight: 25px;
-    color: white;
-    background-color: coral;
+    color: black;
     width: 120px;
     height: 25px;
     display: inline-block;
@@ -90,7 +98,10 @@ h5 {
 p {
     text-align: center;
     width: 100%;
-    color: white;
     font-family: "Times New Roman", Times, serif;
     font-size: 12px;
+}
+
+img{
+    padding: 0px 50px 0px 50px;
 }
