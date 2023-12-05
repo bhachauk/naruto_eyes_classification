@@ -1,7 +1,7 @@
 var results;
 
 function getModelURL(){
-    return 'https://bhanuchander210.github.io/naruto_eyes_classification/tfmodels/lenet/model.json';
+    return 'https://bhachauk.github.io/naruto_eyes_classification/tfmodels/lenet/model.json';
 }
 
 function getImageSize()
@@ -131,6 +131,6 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 
 ga('create', 'UA-100320544-1', 'auto');
 ga('send', 'pageview', {
-  'page': 'https://bhanuchander210.github.io/naruto_eyes_classification',
+  'page': 'https://bhachauk.github.io/naruto_eyes_classification',
   'title': 'Naruto_Eyes_classification'
 });
